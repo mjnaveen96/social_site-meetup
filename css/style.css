@@ -1,13 +1,20 @@
 /*meetup website style*/
 
-.navbar {
-    display: inline-block;
+ .navbar {
         border-bottom: 0px solid rgba(46,62,72,.12);
         background-color: white;
+        width: 1349px;
+        height: 86px;
+        padding: 20px;
+        border-bottom: 1px solid;
 }
 
  #meetlogo {
   border: 0;
+  /* flex-grow: 6; */
+  align-self: center;
+  width: 1017.910;
+  height:51px;
   /* position:absolute;
   top: 0px;
   right: 0px; */
@@ -21,7 +28,7 @@
 } */
 
 .navdiv {
-  width: 100px;S
+  width: 100px;
 }
 
   .navoption1 a {
@@ -33,6 +40,7 @@
   /* display: inline-block; */
   width: 121.7px;
   height: 28px;
+  flex-grow: 2;
 }
 
 .navoption2 a {
@@ -43,15 +51,17 @@
   height: 28px;
   font-size: 14px;
   color: rgba(46, 62, 72, 0.6);
+  flex-grow: 2;
+
   /* display: inline-block; */
 }
-.navoption3 a {
-  font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  text-decoration: none;
-  width: 41.08px;
-  height: 28px;
-  font-size: 14px;
-  color: rgba(46, 62, 72, 0.6);
 
+.navdivflex {
+  display: flex;
+  background-color: yellow;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 1309px;
+  height: 45px;
 }
