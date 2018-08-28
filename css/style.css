@@ -59,3 +59,23 @@
   color: rgba(46, 62, 72, 0.6);
   flex-basis: 200px;
 }
+
+.top_footer {
+    background-color: #757575;
+    height: 50px;
+}
+
+.bottom_footer {
+  background-color: #353e48 ;
+  display: block;
+  color: white;
+  height: 150px;
+
+}
+
+
+.bottom_footer_p1,.bottom_footer_p2{
+  list-style: none;
+  margin: 0;
+
+}
