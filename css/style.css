@@ -119,14 +119,18 @@ div .links {
   font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
 }
 /* get apps*/
+
 .get_the_app_section {
   display: flex;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
 }
 
 .get_the_app_section_1 {
   display: inline-block;
-  padding: 10px;
-  background-color: lightgray;
+  padding: 100px;
+/*   background-color: lightgray; */
+  flex-grow:1;
 }
 
 .get_the_app_section_1 h2 {
@@ -138,14 +142,28 @@ div .links {
   font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
 }
 
+.get_the_app_section_1 a {
+  text-decoration: none;
+  color: rgb(0, 162, 199);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23.2px;
+  text-align: left;
+  font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+}
+
 .both_app_store div {
   display: inline-flex;
-  padding: 15px;
+  padding: 15px; 
 }
 
 .get_the_app_section_2 {
-  display: inline-flex;
-  background-color: gray;
+   padding: 100px; 
+  display: block;
+  position: static;
+  float: bottom;
+  background-color: gray; 
+  flex-grow: 1;
 }
 /*  footer*/
 .top_footer {
