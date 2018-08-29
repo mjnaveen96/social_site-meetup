@@ -1,4 +1,7 @@
 /*meetup website style*/
+ body {
+    margin: 0;
+ }
 
  .navbar {
         margin: 0;
@@ -36,6 +39,9 @@
   height: 45px;
 }
 
+  .navoptions {
+    float: right;
+  }
 
   .navoption1 a {
   color: #00a2c7;
@@ -46,7 +52,7 @@
   /* display: inline-block; */
   width: 121.7px;
   height: 28px;
-  flex-basis: 200px;
+  /* flex-basis: 200px; */
 }
 
 .navoption2 a {
@@ -57,10 +63,18 @@
   height: 28px;
   font-size: 14px;
   color: rgba(46, 62, 72, 0.6);
-  flex-basis: 200px;
+  /* flex-basis: 200px; */
 }
+
+.video {
+    width: auto;
+    height: auto;
+}
+
 div .links {
   /* background-color: yellow; */
+  position: relative;
+  top: -200px;
   width: 1086px;
   margin-left: auto;
   margin-right: auto;
@@ -81,22 +95,42 @@ div .links {
   display: grid;
 }
 
+.meetup_works {
+  background-color: black;
+  color: white;
+}
+
+.meetup_works a {
+  text-decoration: none;
+  color: white;
+}
+
 .top_footer {
     background-color: #757575;
     height: 50px;
 }
 
 .bottom_footer {
-  background-color: #353e48 ;
+  background-color: #2f363f ;
   display: block;
   color: white;
-  height: 150px;
+  box-sizing: border-box;
+  height: 98px;
+  width: 100%;
+  padding: 15px;
 
 }
 
 
-.bottom_footer_p1,.bottom_footer_p2{
-  list-style: none;
+.bottom_footer_p1,.bottom_footer_p2 {
+  text-align: center;
   margin: 0;
+  font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
 
+.bottom_footer_p2 a {
+  text-decoration: none;
+  color: white;
 }
