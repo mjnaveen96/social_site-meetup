@@ -124,11 +124,28 @@ div .links {
 }
 
 .get_the_app_section_1 {
+  display: inline-block;
+  padding: 10px;
   background-color: lightgray;
 }
 
-.both_app_store {
-  display: inline-block;
+.get_the_app_section_1 h2 {
+  color: rgb(46, 62, 72);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 35.2px;
+  text-align: left;
+  font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.both_app_store div {
+  display: inline-flex;
+  padding: 15px;
+}
+
+.get_the_app_section_2 {
+  display: inline-flex;
+  background-color: gray;
 }
 /*  footer*/
 .top_footer {
