@@ -12,58 +12,40 @@
         height: 45px;
 }
 
- #meetlogo {
-  border: 0;
-  /* flex-grow: 6; */
-
-  width: 1017.910;
-  height:51px;
-  /* position:absolute;
-  top: 0px;
-  right: 0px; */
-  /* display: block;
-  float:right; */
-}
-
-/* .navoptions {
-  float: right;
-  list-style-type: none;
-} */
-
 .navdivflex {
   display: flex;
-  background-color: yellow;
-  flex-direction: row;
-  flex-basis: 500px;
-  width: 1309px;
-  height: 45px;
+  /* background-color: lightgray; */
 }
 
-  .navoptions {
-    float: right;
-  }
+#meetlogo {
+  display: inline-flex;
+  flex-grow: 4;
+}
+.navoptions {
+  position: relative;
+  display: inline-flex;
+  flex-grow: 0.0;
+}
 
-  .navoption1 a {
+.navoptions a {
+   display: inline-flex;
+  text-decoration: none;
+}
+
+.navoption1 a {
+  padding: 10px;
   color: #00a2c7;
   font-weight: 600;
   font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
   font-size: 14px;
-  text-decoration: none;
-  /* display: inline-block; */
-  width: 121.7px;
-  height: 28px;
-  /* flex-basis: 200px; */
 }
 
 .navoption2 a {
+  padding: 10px;
+  color: rgba(46, 62, 72, 0.6);
   font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
   font-weight: 400;
-  text-decoration: none;
-  width: 41.08px;
-  height: 28px;
   font-size: 14px;
-  color: rgba(46, 62, 72, 0.6);
-  /* flex-basis: 200px; */
 }
 
 .video {
@@ -96,6 +78,7 @@ div .links {
 }
 
 .meetup_works {
+  padding: 15px;
   background-color: black;
   color: white;
 }
@@ -103,6 +86,31 @@ div .links {
 .meetup_works a {
   text-decoration: none;
   color: white;
+}
+
+.meetup_works h2 {
+  text-align: center;
+  font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.find_meetup {
+  position: relative;
+   display: inline-block;
+   margin: 10px;
+   background: lightgray;
+   height: 100px;
+   width: 45%;
+   font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.create_meetup {
+  position: relative;
+   display: inline-block;
+   margin: 10px;
+   background: lightgray;
+   height: 100px;
+   width: 45%;
+  font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
 }
 
 .top_footer {
@@ -132,5 +140,5 @@ div .links {
 
 .bottom_footer_p2 a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
