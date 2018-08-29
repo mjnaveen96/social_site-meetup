@@ -2,7 +2,7 @@
  body {
     margin: 0;
  }
-
+/*  navigation*/
  .navbar {
         margin: 0;
         border-bottom: 0px solid rgba(46,62,72,.12);
@@ -47,11 +47,13 @@
   font-weight: 400;
   font-size: 14px;
 }
-
+/*  video*/
 .video {
     width: auto;
     height: auto;
 }
+
+/*links  */
 
 div .links {
   /* background-color: yellow; */
@@ -73,9 +75,13 @@ div .links {
   font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
 }
 
+/*  grid*/
+
 .grid_each_options {
   display: grid;
 }
+
+/* Meetup */
 
 .meetup_works {
   padding: 15px;
@@ -112,10 +118,52 @@ div .links {
    width: 45%;
   font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
 }
+/* get apps*/
+.get_the_app_section {
+  display: flex;
+}
 
+.get_the_app_section_1 {
+  background-color: lightgray;
+}
+
+.both_app_store {
+  display: inline-block;
+}
+/*  footer*/
 .top_footer {
-    background-color: #757575;
-    height: 50px;
+  background-color: #353e48;
+  padding:15px;
+  height: 492px;
+  width: auto;
+}
+
+.top_footer_section_1 {
+  padding: 18px;
+  border-bottom: 1px solid hsla(0,0%,100%,.2);
+}
+
+.top_footer_section_1 a {
+    text-decoration: none;
+    color: white;
+    font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.top_footer_section_1_flex_list_1 h4 {
+  text-decoration: none;
+  color: white;
+  font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.top_footer_section_1_flex_list_1 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  list-style: none;
+  font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+}
+
+ul {
+  list-style: none;
 }
 
 .bottom_footer {
