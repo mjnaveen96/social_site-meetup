@@ -79,6 +79,16 @@ div .links {
 
 .grid_each_options {
   display: grid;
+  background-color: lightgray;
+}
+
+.grid_section_1_each_options_inline a {
+  display: inline-grid;
+}
+
+.grid_section_1_each_options_inline img {
+  width: 300px;
+  height: 250px;
 }
 
 /* Meetup */
@@ -154,15 +164,15 @@ div .links {
 
 .both_app_store div {
   display: inline-flex;
-  padding: 15px; 
+  padding: 15px;
 }
 
 .get_the_app_section_2 {
-   padding: 100px; 
+   padding: 100px;
   display: block;
   position: static;
   float: bottom;
-  background-color: gray; 
+  background-color: gray;
   flex-grow: 1;
 }
 /*  footer*/
