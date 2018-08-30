@@ -1,0 +1,99 @@
+<div class="video_links">
+<div class="video">
+  <video src="https://www.meetup.com/mu_static/en-US/dddafbfe4574fc19c6718950691dcb78.mp4" width="100%" type="video/mp4" autoplay loop muted>
+      </video>
+  <div class="video_head">
+    <h1>What do you love?</h1>
+    <p>Do more of it with Meetup</p>
+    <a href="https://www.meetup.com/register/" class="video_signup_buttom">
+       <span>Sign Up</span>
+        </a>
+  </div>
+</div>
+  <div class="links_container">
+    <div class="links">
+      <a href="https://www.meetup.com/find/movements/">Join the movement</a>
+      <a href="https://www.meetup.com/find/food/">Learn to cook</a>
+      <a href="https://www.meetup.com/find/sports-fitness/">Train for a marathon</a>
+      <a href="https://www.meetup.com/find/tech/">Build a mobile app</a>
+      <a href="https://www.meetup.com/find/outdoors-adventure/">Hike a mountain</a>
+      <a href="https://www.meetup.com/find/language/">Practice a language</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+.video_links{
+  position:relative;
+}
+
+.video {
+/*     background-color: lightgray; */
+    overflow: hidden;
+    }
+.video_head {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: Graphik Meetup, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+.video_head h1{
+  font-size: 42px;
+  font-weight: 600px;
+}
+
+.video_head p{
+  font-size: 20px;
+  font-weight: 500px;
+}
+.video_head a {
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  background-color: #f13a59;
+  padding: 12px 12px; 
+   width: 250px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  
+}
+
+/* links....... */
+.links_container {
+  position: absolute;
+  background: white;
+  z-index: 3;
+  width: 100%;
+  bottom: 0px;
+  left:0;
+  padding-top: 20px;
+}
+.links {
+  display: block;
+  background-color: white;
+  position: relative;
+  width: 910px;
+  height: 51px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.links a {
+  align-content: center;
+  margin: 0 ;
+  display: inline-block;
+  padding: 10px;
+  background-color:rgba(41,77,107,.12);
+  border-radius: 3px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+}
