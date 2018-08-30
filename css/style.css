@@ -130,7 +130,36 @@ div .links {
 
 
 /* Meetup */
+.meetup_works {
+  background-color: lightgray;
+  }
 
+.meetup_works h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+  }
+.find_meetup {
+  background: yellow;
+  display: inline-block;
+  padding: 15px;
+  width:45%;
+}
+
+.find-meetup img {
+  color: blue;
+}
+
+.create_meetup {
+  background: yellow;
+  padding: 15px;
+  display: inline-block;
+  width:45%;
+}
+
+/* extra */
 .meetup_works {
   padding: 15px;
   background-color: black;
