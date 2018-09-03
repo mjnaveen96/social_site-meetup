@@ -27,9 +27,9 @@
       </div>
     </nav>
     <!--video-->
-    <div class="video">
-    <video src="https://www.meetup.com/mu_static/en-US/dddafbfe4574fc19c6718950691dcb78.mp4" width="100%" type="video/mp4" autoplay loop muted>
-        </video>
+    <div class="video" style="width: 100%">
+    <video src="https://www.meetup.com/mu_static/en-US/dddafbfe4574fc19c6718950691dcb78.mp4" width="100%" height="auto" type="video/mp4" autoplay loop muted>
+    </video>
     <div class="video_head">
       <h1>What do you love?</h1>
       <p>Do more of it with Meetup</p>
@@ -48,9 +48,9 @@
       <a href="https://www.meetup.com/find/language/">Practice a language</a>
     </div>
 <!--grid options-->
-<div class="grid">
+<div class="grid" >
   <section class="grid_section_2">
-    <h2>Explore by category</h2>
+    <h2 class="gridHead">Explore by category</h2>
     <div class="grid_section_2_each_options">
       <div class="grid_section_2_each_options_inline">
         <a href="https://www.meetup.com/find/outdoors-adventure/">
@@ -158,18 +158,34 @@
   <h2>How Meetup Works</h2>
   <section>
     <div class="find_meetup">
+            <img style="vertical-align: top" src="media/search-logo.jpg"  alt="search logo" height="72px" width="72px"/>
+            <div style="position:relative; vertical-align: top  width: 500px; display: inline-block">
       <h3>Find a Meetup</h3>
-      <img src="https://material.io/tools/icons/static/icons/baseline-search-24px.svg"  alt="search logo" height="44px" width="123.2px"/>
-    </div>
       <p>Discover local Meetups for all the things you love.</p>
-      <a href="https://www.meetup.com/register/">Sign up</a>
+       <a href="https://www.meetup.com/register/">Sign up
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"style="position:relative;top:6px;">
+           <path d="M0 0h24v24H0z" fill="#0f1721"/>
+           <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill="#00a2c7"/>
+         </svg>
+<!--<img src="media/arrow.jpg" alt="arrow">--></a>
+    </div>
     </div>
     <div class="create_meetup">
-      <h3>Create a Meetup</h3>
-      <img src="https://material.io/tools/icons/static/icons/outline-add-24px.svg"  alt="add logo" height="44px" width="123.2px"/>
-      <p>Create your own Meetup, and draw from a community of millions.</p>
-      <a href="https://www.meetup.com/create">Create a Meetup</a>
-    </div>
+       <img style="vertical-align: top" src="media/add-logo.jpg"  alt="add logo" height="72px" width="72px"/>
+      <div style="position:relative; vertical-align: top  width: 500px; display: inline-block">
+        <h3>Create a Meetup</h3>
+        <p>Create your own Meetup, and draw from a community of millions.</p>
+        <a href="https://www.meetup.com/create">Create a Meetup
+           <!-- <img src="media/arrow.jpg" alt="arrow">  -->
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"style="position:relative;top:6px;">
+             <path d="M0 0h24v24H0z" fill="#0f1721"/>
+             <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill="#00a2c7"/>
+           </svg>
+
+
+        </a>
+      </div>
+      </div>
   </section>
 </div>
 <!--get app-->
@@ -177,21 +193,28 @@
 <div class="get_the_app">
   <section class="get_the_app_section">
     <div class="get_the_app_section_1">
+      <div class="text">
       <h2><span>Get the app</span></h2>
       <a href="https://www.meetup.com/apps/">
-        <span>Learn more</span>
+        <span class="learn" >Learn more</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"style="position:relative;top:7px;">
+          <path d="M0 0h24v24H0z" fill="#fff"/>
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill="#00a2c7"/>
+        </svg>
       </a>
+    </div>
       <div class="both_app_store">
-      <div class="apps_store">
+      <!-- <div class="apps_store"> -->
         <a href="http://meetu.ps/2ZhShs">
           <img src="https://www.meetup.com/mu_static/en-US/b85d892d581fc4c388c1d7fad32e7d2f.png" width="160px" height="auto" alt="App Store">
         </a>
-      </div>
-      <div class="play_store">
+        &nbsp;&nbsp;
+      <!-- </div> -->
+      <!-- <div class="play_store"> -->
         <a href="http://meetu.ps/2ZhSyb">
           <img src="https://www.meetup.com/mu_static/en-US/cf6dad406fdfdcd290fd40de9008ae50.png" width="160px" height="auto" alt="App Store">
         </a>
-      </div>
+      <!-- </div> -->
     </div>
   </div>
   <div class="get_the_app_section_2">
@@ -202,119 +225,123 @@
     <!--footer-->
     <footer>
       <div class="top_footer">
-  <section class="top_footer_section_1">
-    <div class="top_footer_section_1_div">
-      <a href="https://www.meetup.com/create/">Start a new group</a>
-    </div>
-  </section>
-  <section class="top_footer_section_2">
-    <div class="top_footer_section_1_flex">
-      <div class="top_footer_section_1_flex_list_1">
-        <ul>
-          <li>
-            <h4>Your account</h4>
-          </li>
-          <li>
-            <a href="https://www.meetup.com/register/">Sign up</a>
-          </li>
-          <li>
-            <a href="https://www.meetup.com/login/">Log in</a>
-          </li>
-          <li>
-            <a href="https://www.meetup.com/en-us/help/">Help</a>
-          </li>
-        </ul>
-      </div>
-      <div class="top_footer_section_1_flex_list_2">
+      <section class="top_footer_section_1">
+        <div class="top_footer_section_1_div">
+          <a href="https://www.meetup.com/create/">Start a new group</a>
+        </div>
+      </section>
+      <section class="top_footer_section_2">
+        <div class="top_footer_section_2_flex">
+          <div class="top_footer_section_2_flex_list_1">
+            <ul>
+              <li>
+                <h4>Your account</h4>
+              </li>
+              <li>
+                <a href="https://www.meetup.com/register/">Sign up</a>
+              </li>
+              <li>
+                <a href="https://www.meetup.com/login/">Log in</a>
+              </li>
+              <li>
+                <a href="https://www.meetup.com/en-us/help/">Help</a>
+              </li>
+            </ul>
+          </div>
+          <div class="top_footer_section_2_flex_list_2">
 
-        <ul>
-          <li>
-            <h4>Discover</h4>
-          </li>
-          <li>
-            <a href="https://www.meetup.com/find/">Groups</a>
-          </li>
-          <li>
-            <a href="https://www.meetup.com/find/events/">Calender</a>
-          </li>
-          <li>
-            <a href="https://www.meetup.com/topics/">Topics</a>
-          </li>
-          <li>
-            <a href="https://www.meetup.com/cities/">Cities</a>
-          </li>
-        </ul>
-      </div>
-      <div class="top_footer_section_1_flex_list_3">
+            <ul>
+              <li>
+                <h4>Discover</h4>
+              </li>
+              <li>
+                <a href="https://www.meetup.com/find/">Groups</a>
+              </li>
+              <li>
+                <a href="https://www.meetup.com/find/events/">Calender</a>
+              </li>
+              <li>
+                <a href="https://www.meetup.com/topics/">Topics</a>
+              </li>
+              <li>
+                <a href="https://www.meetup.com/cities/">Cities</a>
+              </li>
+            </ul>
+          </div>
+          <div class="top_footer_section_2_flex_list_3">
 
-        <ul>
-          <li>
-            <h4>Meetup</h4>
-          </li>
-          <li>
-            <a href="https://www.meetup.com/about/">About</a>
-          </li>
-          <li>
-            <a href="https://www.meetup.com/pro/">Meetup Pro</a>
-          </li>
-          <li>
-            <a href="https://www.meetup.com/jobs/">Careers</a>
-          </li>
-          <li>
-            <a href="https://www.meetup.com/apps/">Apps</a>
-          </li>
-          <li>
-            <a href="https://www.meetup.com/meetup_api/">API</a>
-          </li>
-        </ul>
-      </div>
-      <div class="top_footer_section_1_flex_list_4">
-        <ul>
-          <li>
-            <h4>Follow Us</h4>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/meetup/">F</a>
-            <a href="https://twitter.com/Meetup/">T</a>
-            <a href="https://www.youtube.com/meetup">Y</a>
-            <a href="https://www.instagram.com/meetup/">I</a>
-            <a href="https://medium.com/meetup">M</a>
-          </li>
-          <li> <select class="top_footer_section_1_flex_list_4_selector">
-  <option value="English">English</option>
-  <option value="Deutsch">Deutsch</option>
-  <option value="English (Australia)">English (Australia)</option>
-  <option value="Español">Español</option>
-  <option value="Español (España)">Español (España)</option>
-  <option value="Français">Français</option>
-  <option value="Italino">Italino</option>
-  <option value="日本語">日本語</option>
-  <option value="한국어">한국어</option>
-  <option value="Netherlands">Netherlands</option>
-  <option value="Português">Português</option>
-  <option value="Polski">Polski</option>
-  <option value="Русский">Русский</option>
-  <option value="ไทย">ไทย</option>
-  <option value="Türkçe">Türkçe</option>
-         </select></li>
-          <li>
-            <div class="top_footer_section_1_flex_list_4_both_app_store">
-              <div class="apps_store">
-                <a href="http://meetu.ps/2ZhShs">
-          <img src="https://www.meetup.com/mu_static/en-US/b85d892d581fc4c388c1d7fad32e7d2f.png" width="160px" height="auto" alt="App Store">
-        </a>
-              </div>
-              <div class="play_store">
-                <a href="http://meetu.ps/2ZhSyb">
-          <img src="https://www.meetup.com/mu_static/en-US/cf6dad406fdfdcd290fd40de9008ae50.png" width="160px" height="auto" alt="App Store">
-        </a>
-              </div>
-            </div>
-          </li>
-      </div>
+            <ul>
+              <li>
+                <h4>Meetup</h4>
+              </li>
+              <li>
+                <a href="https://www.meetup.com/about/">About</a>
+              </li>
+              <li>
+                <a href="https://www.meetup.com/pro/">Meetup Pro</a>
+              </li>
+              <li>
+                <a href="https://www.meetup.com/jobs/">Careers</a>
+              </li>
+              <li>
+                <a href="https://www.meetup.com/apps/">Apps</a>
+              </li>
+              <li>
+                <a href="https://www.meetup.com/meetup_api/">API</a>
+              </li>
+            </ul>
+          </div>
+          <div class="top_footer_section_2_flex_list_4">
+            <ul>
+              <li>
+                <h4>Follow Us</h4>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/meetup/">
+                  <img src="media/facebook-logo.jpg" alt="facebook logo">
+                </a>
+                <a href="https://twitter.com/Meetup/"><img src="media/twitter-logo.jpg" alt="twitter logo"></a>
+                <a href="https://www.youtube.com/meetup"><img src="media/youtube-logo.jpg" alt="youtube logo"></a>
+                <a href="https://www.instagram.com/meetup/"><img src="media/insta-logo.jpg" alt="insta logo"></a>
+                <a href="https://medium.com/meetup"><img src="media/medium-logo.jpg" alt="medium logo"></a>
+              </li>
+              <li>
+                <select class="top_footer_section_2_flex_list_4_selector">
+                  <option value="English">English</option>
+                  <option value="Deutsch">Deutsch</option>
+                  <option value="English (Australia)">English (Australia)</option>
+                  <option value="Español">Español</option>
+                  <option value="Español (España)">Español (España)</option>
+                  <option value="Français">Français</option>
+                  <option value="Italino">Italino</option>
+                  <option value="日本語">日本語</option>
+                  <option value="한국어">한국어</option>
+                  <option value="Netherlands">Netherlands</option>
+                  <option value="Português">Português</option>
+                  <option value="Polski">Polski</option>
+                  <option value="Русский">Русский</option>
+                  <option value="ไทย">ไทย</option>
+                  <option value="Türkçe">Türkçe</option>
+                </select>
+              </li>
+              <li>
+                <div class="top_footer_section_2_flex_list_4_both_app_store">
+                  <!-- <div class="apps_store"> -->
+                    <a href="http://meetu.ps/2ZhShs">
+                      <img src="https://www.meetup.com/mu_static/en-US/b85d892d581fc4c388c1d7fad32e7d2f.png" width="160px" height="auto" alt="App Store">
+                    </a>
+                  <!-- </div> -->
+                  <!-- <div class="play_store"> -->
+                    <a href="http://meetu.ps/2ZhSyb">
+                      <img src="https://www.meetup.com/mu_static/en-US/cf6dad406fdfdcd290fd40de9008ae50.png" width="160px" height="auto" alt="App Store">
+                    </a>
+                  <!-- </div> -->
+                </div>
+              </li>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
-</div>
       <div class="bottom_footer">
         <div>
           <p class="bottom_footer_p1">

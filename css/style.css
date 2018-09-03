@@ -47,9 +47,19 @@
   font-weight: 400;
   font-size: 14px;
 }
+
+.navoption2 a:hover {
+  color: #00a2c7;
+}
 /*  video*/
 .video {
     /* background-color: lightgray; */
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    }
+    .video video {
+      z-index: 0;
     }
 .video_head {
   text-align: center;
@@ -84,12 +94,16 @@
 
 }
 
+.video_head a:hover {
+  background-color: #d32d4a;
+}
+
 /*links  */
 
-div .links {
+ .links {
   /* background-color: yellow; */
   position: relative;
-  top: -200px;
+  top: 10px;
   width: 1086px;
   margin-left: auto;
   margin-right: auto;
@@ -106,11 +120,22 @@ div .links {
   font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
 }
 
-/*  grid*/
+.links a:hover {
+  background-color:rgba(41,77,107,.19) ;
+}
 
-.grid_each_options {
+/*  grid*/
+.gridHead {
+  margin-left: 70px;
+}
+
+.grid_section_2_each_options {
   display: grid;
-  background-color: lightgray;
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  /* background-color: lightgray; */
+  grid-template-columns: auto auto auto auto;
 }
 
 .grid_section_2_each_options_inline a {
@@ -127,42 +152,16 @@ div .links {
   height: 250px;
   border-radius: 10px;
 }
+.grid_section_2_each_options h4 {
+  color: #000;
+}
 
 
 /* Meetup */
-.meetup_works {
-  background-color: lightgray;
-  }
 
-.meetup_works h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 500;
-  font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
-  }
-.find_meetup {
-  background: yellow;
-  display: inline-block;
-  padding: 15px;
-  width:45%;
-}
-
-.find-meetup img {
-  color: blue;
-}
-
-.create_meetup {
-  background: yellow;
-  padding: 15px;
-  display: inline-block;
-  width:45%;
-}
-
-/* extra */
 .meetup_works {
   padding: 15px;
-  background-color: black;
+  background-color: #0f1721;
   color: white;
 }
 
@@ -177,24 +176,39 @@ div .links {
 }
 
 .find_meetup {
-  position: relative;
+  padding-left: 70px;
+  float:left;
    display: inline-block;
-   margin: 10px;
-   background: lightgray;
-   height: 100px;
+    margin: 10px;
+   /* background: lightgray; */
+   height: 180px;
    width: 45%;
    font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
 }
 
+.find_meetup a {
+  color: #00a2c7;
+  font-weight: 500;
+}
+
 .create_meetup {
-  position: relative;
    display: inline-block;
    margin: 10px;
-   background: lightgray;
-   height: 100px;
+   /* background: lightgray; */
+   height: 180px;
    width: 45%;
   font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
 }
+
+.create_meetup a {
+  color: #00a2c7;
+  font-weight: 500;
+  display: inline-block;
+
+}
+
+
+
 /* get apps*/
 
 .get_the_app_section {
@@ -205,12 +219,14 @@ div .links {
 
 .get_the_app_section_1 {
   display: inline-block;
-  padding: 100px;
+
+  padding: 10px 100px;
 /*   background-color: lightgray; */
   flex-grow:1;
 }
 
 .get_the_app_section_1 h2 {
+  padding-left: 50px;
   color: rgb(46, 62, 72);
   font-size: 32px;
   font-weight: 500;
@@ -228,19 +244,28 @@ div .links {
   text-align: left;
   font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
 }
-
-.both_app_store div {
-  display: inline-flex;
-  padding: 15px;
+/* .text{
+  display:inline-block;
+} */
+ .learn {
+  padding-left: 50px;
+}
+.both_app_store  {
+  margin: 20px;
+  padding-left: 30px;
 }
 
 .get_the_app_section_2 {
-   padding: 100px;
+   padding: 0px 100px;
   display: block;
   position: static;
   float: bottom;
-  background-color: gray;
+  /* background-color: gray; */
   flex-grow: 1;
+}
+.get_the_app_section_2 img {
+  position: relative;
+  top: 4px;
 }
 /*  footer*/
 .top_footer {
@@ -251,6 +276,8 @@ div .links {
 }
 
 .top_footer_section_1 {
+  margin-left: 40px;
+  margin-right: 40px;
   padding: 18px;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
 }
@@ -260,9 +287,13 @@ div .links {
 }
 
 .top_footer_section_2 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.top_footer_section_2_flex {
   display: flex;
   width: 100%;
-  /*   background-color: lightgray; */
+    /* background-color: lightblue; */
   text-decoration: none;
 }
 
@@ -270,61 +301,100 @@ div .links {
   text-decoration: none;
 }
 
-.top_footer_section_1_flex_list_1 {
-  display: inline-flex;
+.top_footer_section_2_flex_list_1 {
+/* padding: 20px; */
+flex-basis: 22%;
 }
 
-.top_footer_section_1_flex_list_1 ul {
+.top_footer_section_2_flex_list_1 ul {
   list-style: none;
   color: hsla(0, 0%, 100%, 0.7);
 }
 
-.top_footer_section_1_flex_list_1 a {
+.top_footer_section_2_flex_list_1 li {
+  padding: 20px;
+}
+.top_footer_section_2_flex_list_1 a {
   color: hsla(0, 0%, 100%, 0.7);
 }
 
-.top_footer_section_1_flex_list_2 {
-  display: inline-flex;
+.top_footer_section_2_flex_list_2 {
+flex-basis: 22%;
+/* padding: 20px; */
 }
 
-.top_footer_section_1_flex_list_2 ul {
+.top_footer_section_2_flex_list_2 ul {
   list-style: none;
 }
 
-.top_footer_section_1_flex_list_2 a {
+.top_footer_section_2_flex_list_2 a {
   color: hsla(0, 0%, 100%, 0.7);
 }
 
-.top_footer_section_1_flex_list_3 {
-  display: inline-flex;
+.top_footer_section_2_flex_list_2 li {
+  padding: 20px;
 }
 
-.top_footer_section_1_flex_list_3 ul {
+.top_footer_section_2_flex_list_3 {
+flex-basis: 22%;
+/* padding: 20px; */
+}
+
+.top_footer_section_2_flex_list_3 ul {
   list-style: none;
 }
 
-.top_footer_section_1_flex_list_3 a {
+.top_footer_section_2_flex_list_3 a {
   color: hsla(0, 0%, 100%, 0.7);
+}
+
+.top_footer_section_2_flex_list_3 li {
+  padding: 20px;
 }
 
 /* ul */
-h4 {
+.top_footer_section_2_flex h4 {
   color: #fff;
 }
 
-.top_footer_section_1_flex_list_4 {
-  display: inline-flex;
+.top_footer_section_2_flex_list_4 {
+flex-basis: 29%;
+/* padding: 20px; */
 }
 
-.top_footer_section_1_flex_list_4 ul {
+.top_footer_section_2_flex_list_4 ul {
   list-style: none;
 }
 
-.top_footer_section_1_flex_list_4 a {
+.top_footer_section_2_flex_list_4 a {
   list-style: none;
   color: hsla(0, 0%, 100%, 0.7);
+  padding: 10px;
 }
 
+.top_footer_section_2_flex_list_4 li {
+  padding: 20px;
+}
+
+.top_footer_section_2_flex_list_4_selector {
+  background-color: #0f1721;
+  color: #fff;
+  width: 100%;
+  height: 55.2px;
+  border-color: hsla(0,0%,100%,.2);
+  border-radius: 4px;
+border: 1px solid rgba(46,62,72,.12);
+padding: 16px;
+font-family: Graphik Meetup, -apple-system, BlinkMacSystemFont, Roboto,
+  Helvetica, Arial, sans-serif;
+      margin: 0 0 4px;
+}
+
+.top_footer_section_2_flex_list_4_both_app_store img {
+  display: inline-block;
+  position: relative;
+  width: 130px;
+}
 
 .bottom_footer {
   background-color: #2f363f ;
@@ -339,11 +409,12 @@ h4 {
 
 
 .bottom_footer_p1,.bottom_footer_p2 {
-  text-align: center;
+  text-align: left;
   margin: 0;
   font-family: Graphik Meetup,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.6;
+  padding-left: 75px;
 }
 
 .bottom_footer_p2 a {
