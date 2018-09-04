@@ -125,17 +125,22 @@
 }
 
 /*  grid*/
+.grid {
+  padding-bottom: 50px;
+}
 .gridHead {
-  margin-left: 70px;
+  margin-left: 150px;
 }
 
 .grid_section_2_each_options {
   display: grid;
   width: 90%;
   position: relative;
-  margin: 0 auto;
+  margin: auto auto;
+  padding-left: 150px;
   /* background-color: lightgray; */
   grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
 }
 
 .grid_section_2_each_options_inline a {
@@ -148,8 +153,8 @@
 }
 
 .grid_section_2_each_options_inline img {
-  width: 300px;
-  height: 250px;
+  width: 253px;
+  height: 160px;
   border-radius: 10px;
 }
 .grid_section_2_each_options h4 {
@@ -176,7 +181,7 @@
 }
 
 .find_meetup {
-  padding-left: 70px;
+  padding-left: 90px;
   float:left;
    display: inline-block;
     margin: 10px;
@@ -219,8 +224,9 @@
 
 .get_the_app_section_1 {
   display: inline-block;
-
-  padding: 10px 100px;
+  padding-left: 200px;
+  padding-top: 40px;
+  /* padding: 10px 100px; */
 /*   background-color: lightgray; */
   flex-grow:1;
 }
@@ -388,6 +394,11 @@ padding: 16px;
 font-family: Graphik Meetup, -apple-system, BlinkMacSystemFont, Roboto,
   Helvetica, Arial, sans-serif;
       margin: 0 0 4px;
+      font-size: 100%;
+}
+
+.top_footer_section_2_flex_list_4_selector:hover {
+  border-color: #fff;
 }
 
 .top_footer_section_2_flex_list_4_both_app_store img {
